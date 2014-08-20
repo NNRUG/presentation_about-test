@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Субъективно про тесты</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=792, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+</head>
+<body class="list">
+  <header class="caption">
+    <h1>Субъективно про тесты</h1>
+    <p>В Rails, Ruby и по жизни</p>
+  </header>
+  <section class="slide cover" id="Cover"><div>
+    <h2>Субъективно про тесты</h2>
+    <p>В Rails, Ruby и по жизни</p>
+    <!--
+      To apply styles to the certain slides
+      set slide ID to get needed elements
+      -->
+    <style>
+      #Cover h2 {
+        margin:30px 0 0;
+        color:#FFF;
+        text-align:center;
+        font-size:70px;
+        }
+      #Cover p {
+        margin:10px 0 0;
+        text-align:center;
+        color:#FFF;
+        font-style:italic;
+        font-size:20px;
+        }
+        #Cover p a {
+          color:#FFF;
+          }
+    </style>
+  </div></section>
+  <section class="slide shout"><div>
+    <h2>Зачем писать тесты?</h2>
+  </div></section>
+  <section class="slide"><div>
+    <h2>Зачем писать тесты?</h2>
+    <ol>
+      <li>Мир такой большой и он постоянно меняется
+      	<ul>
+      		<li class='next'>Ruby on Rails 5 is coming (soon)</li>
+      		<li class='next'>MySQL is sux, let's use PostgreSQL</li>
+      		<li class='next'>Our API has suddenly changed</li>
+      		<li class='next'>Еще и Крым теперь наш...</li>
+      	</ul>
+      </li>
+      <li class="next">Иногда тесты расскажут о проекте больше, чем его менеджер или документация (со временем – даже нам самим)</li>
+      <li class="next">В коммерческих проектах ошибки стоят реальных денег</li>
+      <li class="next">Потенциальные работодатели копипастят тексты вакансий</li>
+    </ol>
+  </div></section>
+  <section class="slide shout"><div>
+    <h2>Когда писать тесты?</h2>
+  </div></section>
+  <section class="slide"><div>
+    <h2>Когда писать тесты?</h2>
+    <p class='note'>Тесты – это инвестиции в будущее. Тратя время на тесты сегодня вы облегчаете себе работу завтра.</p>
+    <ol>
+      <li class='next'>Когда есть чувство, что проект будет развиваться и жить дальше</li>
+      <li class="next">Когда вы работаете с чужими источниками данных</li>
+      <li class="next">Когда вам приятнее сначала писать тесты, а потом код (TDD)</li>
+    </ol>
+  </div></section>
+  <section class="slide shout"><div>
+    <h2>Что тестировать?</h2>
+  </div></section>
+  <section class="slide"><div>
+    <h2>Что тестировать?</h2>
+    <ol>
+      <li>По возможности – все</li>
+      <li class="next">В первую очередь то, что чаще ломается
+      	<ul>
+      		<li class="next">Работу с внешними сервисами и данными</li>
+      		<li class="next">Вызовы чужого кода (гемы, наследие предшественников, итд)</li>
+      		<li class="next">Запутанные методы</li>
+      	</ul>
+      </li>
+      <li class="next">Все, что связано с вводом данных</li>
+    </ol>
+  </div></section>
+  <section class="slide shout"><div>
+    <h2>Как тестировать?</h2>
+  </div></section>
+  <section class="slide"><div>
+    <h2>Как тестировать?</h2>
+    <ol>
+      <li>RSpec, Minitest для юнит-тестов</li>
+      <li class="next">Capybara, Cucumber для интеграционных тестов</li>
+      <li class="next">Travis CI, CODESHIP</li>
+      <li class="next"><a href='https://coveralls.io'>https://coveralls.io</a></li>
+    </ol>
+  </div></section>
+  <section class="slide shout" id="SeeMore"><div>
+    <h2><img src="pictures/cat.gif" alt=""> Спасибо, пожалуйста!</h2>
+    <style>
+      #Picture h2 {
+        color:#FFF;
+        }
+      #SeeMore h2 {
+        font-size:100px
+        }
+      #SeeMore img {
+        width:300px;
+        height:180px;
+        margin: 0 auto;
+        display: block;
+        }
+    </style>
+  </div></section>
+  <!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+  <div class="progress"><div></div></div>
+  <script src="shower/shower.min.js"></script>
+  <!-- Copyright © 2014 Yours Truly, Famous Inc. -->
+  <!-- Photos by John Carey, fiftyfootshadows.net -->
+</body>
+</html>
